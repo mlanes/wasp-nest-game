@@ -1,0 +1,12 @@
+.game__footer {
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game__footer-controls {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,29 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary-darkest);
+  z-index: var(--z-index-loading);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loading--fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading__wasp {
+  position: relative;
+  animation: loading-wasp 2.5s ease-in-out infinite;
+}
+
+.loading__wasp-image {
+  width: 150px;
+  height: 150px;
+}

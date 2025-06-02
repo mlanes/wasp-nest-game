@@ -1,0 +1,47 @@
+.wasp__energy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  z-index: 1;
+	filter: drop-shadow(0 0 8px var(--color-secondary-darkest));
+}
+
+.wasp__energy-bar {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  transform: skewX(-45deg);
+  background-color: var(--color-energy-background);
+  border: 2px solid var(--color-energy-border);
+  backdrop-filter: blur(12px);
+}
+
+.wasp__energy-fill {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.wasp__energy-fill--full {
+  background-image: linear-gradient(to left, var(--color-success), var(--color-success-dark));
+}
+
+.wasp__energy-fill--medium {
+  background-image: linear-gradient(to left, var(--color-warning), var(--color-warning-dark));
+}
+
+.wasp__energy-fill--low {
+  background-image: linear-gradient(to left, var(--color-danger), var(--color-danger-dark));
+}
+
+.wasp__energy-label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-light);
+}
+
+.wasp--knocked-out>.wasp__energy>.wasp__energy-bar {
+  background-color: var(--color-energy-knocked);
+  border-color: var(--color-energy-knocked);
+}

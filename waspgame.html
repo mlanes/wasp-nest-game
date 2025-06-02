@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="theme-color" content="#04315e"/>
+
+  <title>Wasp Nest Game</title>
+  <meta name="title" content="Wasp Nest Game">
+  <meta name="description" content="Battle against a swarm of wasps in this action-packed browser game! Zap workers, drones, and their queen to win. Each wasp has unique energy levels and recovery times - can you knock them all out?">
+  <meta name="keywords" content="game, wasp, browser game, javascript game">
+
+	<meta name="author" content="Mario Lannes">
+
+	<!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicon.ico">
+
+  <!-- Game styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Game source files -->
+  <script defer src="./assets/js/src/wasp.js"></script>
+  <script defer src="./assets/js/src/game-engine.js"></script>
+  <script defer src="./assets/js/src/display-engine.js"></script>
+  <script defer src="./assets/js/src/tutorial-engine.js"></script>
+  <script defer src="./assets/js/index.js"></script>
+</head>
+
+<body>
+  <!-- Loading screen -->
+  <div class="loading">
+    <div class="loading__wasp">
+      <img src="./assets/img/icons/queen-loading.png" class="loading__wasp-image" alt="Queen Wasp" />
+    </div>
+  </div>
+
+  <!-- Tutorial -->
+  <div class="tutorial tutorial--hidden">
+    <div class="tutorial__content">
+      <h2 class="tutorial__title">How to Play?</h2>
+
+      <div class="tutorial__section">
+        <h3>The Wasps</h3>
+        <div class="tutorial__wasps">
+          <div class="tutorial__wasp">
+            <img src="./assets/img/wasps/queen.png" alt="Queen Wasp" />
+            <h4>Queen Wasp</h4>
+            <p>The boss! Knock her out to win instantly.</p>
+          </div>
+          <div class="tutorial__wasp">
+            <img src="./assets/img/wasps/drone.png" alt="Drone Wasp" />
+            <h4>Drone Wasp</h4>
+            <p>Small but nimble wasps with low energy.</p>
+          </div>
+          <div class="tutorial__wasp">
+            <img src="./assets/img/wasps/worker.png" alt="Worker Wasp" />
+            <h4>Worker Wasp</h4>
+            <p>Steady workers with medium energy.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tutorial__section">
+        <h3>How to Win</h3>
+        <ul class="tutorial__list">
+          <li>Knock out the Queen Wasp for instant victory!</li>
+          <li>Knock out all wasps to clear the nest</li>
+          <li>Watch out! Wasps recover after 40 seconds</li>
+        </ul>
+      </div>
+
+      <div class="tutorial__section">
+        <h3>Controls</h3>
+        <div class="tutorial__controls">
+          <img src="./assets/img/environment/zapper.png" alt="Zap Button" />
+          <p>Click the Zap button to hit a random wasp!</p>
+        </div>
+      </div>
+
+      <button class="tutorial__button">Play!</button>
+    </div>
+  </div>
+
+  <main class="game">
+    <div class="game__status">
+      <div class="game__status-content">
+        <p class="game__status-winner-message">You are the winner!</p>
+        <p class="game__status-message"></p>
+        <img src="./assets/img/wasps/knocked-out-wasps.png" alt="Wasps knocked out"/>
+      </div>
+      <button class="game__button game__button--reset">Play Again</button>
+    </div>
+
+    <header class="game__header">
+      <div class="game__header-controls">
+        <button class="game__button game__button--help" title="How to Play?">How to Play</button>
+        <button class="game__button game__button--reset">Reset Game</button>
+      </div>
+    </header>
+
+    <div class="game__container"></div>
+
+    <footer class="game__footer">
+      <div class="game__footer-controls">
+        <button class="game__button game__button--zap" title="Zap!"></button>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

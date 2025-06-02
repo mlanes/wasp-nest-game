@@ -1,0 +1,14 @@
+.game__header {
+  align-items: center;
+  display: flex;
+  height: var(--header-height);
+  padding: 0 18px;
+}
+
+.game__header-controls {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+	gap: 24px;
+  width: 100%;
+}

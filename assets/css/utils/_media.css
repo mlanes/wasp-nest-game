@@ -1,0 +1,76 @@
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+  .game__center {
+    background-position: left center;
+  }
+
+  .game__status-message {
+    font-size: 18px;
+  }
+
+  .game__button--reset {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .wasp--queen {
+    width: var(--size-wasp-queen-tablet);
+    height: var(--size-wasp-queen-tablet);
+  }
+
+  .wasp--drone {
+    width: var(--size-wasp-drone-tablet);
+    height: var(--size-wasp-drone-tablet);
+  }
+
+  .wasp--worker {
+    width: var(--size-wasp-worker-tablet);
+    height: var(--size-wasp-worker-tablet);
+  }
+
+  .wasp__zapper {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .game__status-message {
+    font-size: 28px;
+  }
+
+  .game__button--reset {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .wasp--queen {
+    width: var(--size-wasp-queen-desktop);
+    height: var(--size-wasp-queen-desktop);
+  }
+
+  .wasp--drone {
+    width: var(--size-wasp-drone-desktop);
+    height: var(--size-wasp-drone-desktop);
+  }
+
+  .wasp--worker {
+    width: var(--size-wasp-worker-desktop);
+    height: var(--size-wasp-worker-desktop);
+  }
+
+  .wasp__energy-label {
+    font-size: 14px;
+  }
+
+  .wasp__energy-bar {
+    border: 3px solid var(--color-energy-border);
+    height: 10px;
+  }
+
+  .wasp__zapper {
+    height: 50px;
+    width: 50px;
+  }
+}

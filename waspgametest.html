@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="theme-color" content="#04315e"/>
+
+  <title>Wasp Nest Game - Tests</title>
+  <meta name="title" content="Wasp Nest Game - Tests">
+  <meta name="description" content="Unit test suite for the Wasp Nest Game components, including game engine, display engine, and wasp behavior tests">
+  <meta name="keywords" content="game, wasp, browser game, javascript game">
+
+	<meta name="author" content="Mario Lannes">
+
+	<!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicon.ico">
+
+  <!-- Game styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Game test styles -->
+   <link rel="stylesheet" href="./assets/css/unit-test.css">
+
+  <!-- Game source files -->
+  <script src="./assets/js/src/wasp.js"></script>
+  <script src="./assets/js/src/game-engine.js"></script>
+  <script src="./assets/js/src/display-engine.js"></script>
+  <script src="./assets/js/src/tutorial-engine.js"></script>
+
+    <!-- Test utilities -->
+  <script src="./tests/test-utils.js"></script>
+
+  <!-- Test files -->
+  <script src="./tests/unit/wasp.test.js"></script>
+  <script src="./tests/unit/game-engine.test.js"></script>
+  <script src="./tests/unit/display-engine.test.js"></script>
+  <script src="./tests/unit/tutorial-engine.test.js"></script>
+
+  <script>
+    // Run all test suites
+    function runAllTests() {
+      console.log('Running tests...');
+
+      // Game Engine Tests
+      runTestSuite("Game Engine Tests", window.gameEngineTests);
+
+      // Display Engine Tests
+      runTestSuite("Display Engine Tests", window.displayEngineTests);
+
+      // Wasp Tests
+      runTestSuite("Wasp Tests", window.waspTests);
+
+			// Tutorial Tests
+      runTestSuite("Tutorial Tests", window.tutorialEngineTests);
+    }
+
+    document.addEventListener('DOMContentLoaded', runAllTests);
+  </script>
+</head>
+
+<body>
+  <h1>Wasp Game Tests</h1>
+  <div id="test-results"></div>
+</body>
+
+</html>
