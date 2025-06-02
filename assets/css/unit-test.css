@@ -1,66 +1,66 @@
 body {
-  font-family: var(--font-family-primary);
-  padding: 20px;
-  background: #f5f5f5;
+	font-family: var(--font-family-primary);
+	padding: 20px;
+	background: #f5f5f5;
 }
 
 h1 {
-  color: var(--color-secondary);
-  margin-bottom: 30px;
+	color: var(--color-secondary);
+	margin-bottom: 30px;
 }
 
 .test-suite {
-  background: white;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background: white;
+	margin: 20px 0;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .test-suite h2 {
-  color: var(--color-secondary);
-  margin-top: 0;
+	color: var(--color-secondary);
+	margin-top: 0;
 }
 
 .test-result {
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 4px;
-  font-family: monospace;
+	margin: 10px 0;
+	padding: 15px;
+	border-radius: 4px;
+	font-family: monospace;
 }
 
 .test-result pre {
-  margin: 10px 0;
-  padding: 10px;
-  background: #f8f8f8;
-  border-radius: 4px;
-  overflow-x: auto;
+	margin: 10px 0;
+	padding: 10px;
+	background: #f8f8f8;
+	border-radius: 4px;
+	overflow-x: auto;
 }
 
 .pass {
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-  color: #3c763d;
+	background-color: #dff0d8;
+	border: 1px solid #d6e9c6;
+	color: #3c763d;
 }
 
 .fail {
-  background-color: #f2dede;
-  border: 1px solid #ebccd1;
-  color: #a94442;
+	background-color: #f2dede;
+	border: 1px solid #ebccd1;
+	color: #a94442;
 }
 
 .test-summary {
-  margin-top: 20px;
-  padding: 15px;
-  background: #f8f8f8;
-  border-radius: 4px;
+	margin-top: 20px;
+	padding: 15px;
+	background: #f8f8f8;
+	border-radius: 4px;
 }
 
 .test-summary h3 {
-  margin-top: 0;
-  color: var(--color-secondary);
+	margin-top: 0;
+	color: var(--color-secondary);
 }
 
 .test-summary p {
-  margin: 5px 0;
+	margin: 5px 0;
 }

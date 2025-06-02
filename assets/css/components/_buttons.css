@@ -1,101 +1,101 @@
 .game__button {
-  cursor: pointer;
-  border: none;
+	cursor: pointer;
+	border: none;
 }
 
 .game__button--help {
-  position: relative;
-  font-size: 0.9rem;
-  font-weight: var(--font-weight-bold);
-  padding: 8px 16px;
-  padding-right: 32px;
-  background-color: var(--color-secondary-darkest);
-  color: var(--color-white);
-  transition: var(--transition-default);
-  border: 2px solid var(--color-secondary);
-  border-radius: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+	position: relative;
+	font-size: 0.9rem;
+	font-weight: var(--font-weight-bold);
+	padding: 8px 16px;
+	padding-right: 32px;
+	background-color: var(--color-secondary-darkest);
+	color: var(--color-white);
+	transition: var(--transition-default);
+	border: 2px solid var(--color-secondary);
+	border-radius: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
 }
 
 .game__button--help::after {
-  content: "?";
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.1rem;
-  font-weight: var(--font-weight-bold);
-  color: var(--color-warning);
+	content: "?";
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.1rem;
+	font-weight: var(--font-weight-bold);
+	color: var(--color-warning);
 }
 
 .game__button--help:hover {
-  background-color: var(--color-secondary-darker);
-  border-color: var(--color-warning);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(7, 69, 130, 0.3);
+	background-color: var(--color-secondary-darker);
+	border-color: var(--color-warning);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(7, 69, 130, 0.3);
 }
 
 .game__button--help:active {
-  background-color: var(--color-secondary-darkest);
-  border-color: var(--color-warning-dark);
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(7, 69, 130, 0.3);
+	background-color: var(--color-secondary-darkest);
+	border-color: var(--color-warning-dark);
+	transform: translateY(0);
+	box-shadow: 0 2px 6px rgba(7, 69, 130, 0.3);
 }
 
 .game__button--reset {
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: var(--font-weight-bold);
-  padding: 8px 16px;
-  background-color: var(--color-warning);
-  color: var(--color-gray-dark);
-  transition: var(--transition-default);
-  border: 2px solid var(--color-warning-dark);
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: var(--font-weight-bold);
+	padding: 8px 16px;
+	background-color: var(--color-warning);
+	color: var(--color-gray-dark);
+	transition: var(--transition-default);
+	border: 2px solid var(--color-warning-dark);
 }
 
 .game__button--reset:hover {
-  background-color: var(--color-warning-dark);
-  border-color: var(--color-warning);
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+	background-color: var(--color-warning-dark);
+	border-color: var(--color-warning);
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
 }
 
 .game__button--reset:active {
-  background-color: var(--color-warning-dark);
-  border-color: var(--color-warning);
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+	background-color: var(--color-warning-dark);
+	border-color: var(--color-warning);
+	transform: scale(1.1);
+	box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
 }
 
 .game__button--zap {
-  background-color: var(--color-secondary);
-  background-image: url('../../img/environment/zapper.png');
-  background-size: 90px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  width: 125px;
-  height: 125px;
-  border: 4px solid var(--color-secondary-dark);
-  transition: var(--transition-default);
+	background-color: var(--color-secondary);
+	background-image: url('../../img/environment/zapper.png');
+	background-size: 90px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
+	border: 4px solid var(--color-secondary-dark);
+	transition: var(--transition-default);
 }
 
 .game__button--zap:hover {
-  background-color: var(--color-secondary-darker);
-  border-color: var(--color-secondary-darkest);
-  transform: scale(1.2);
-  box-shadow: 0 0 15px rgba(7, 69, 130, 0.5);
+	background-color: var(--color-secondary-darker);
+	border-color: var(--color-secondary-darkest);
+	transform: scale(1.2);
+	box-shadow: 0 0 15px rgba(7, 69, 130, 0.5);
 }
 
 .game__button--zap:active {
-  background-color: var(--color-secondary-darker);
-  border-color: var(--color-secondary-darkest);
-  box-shadow: 0 0 20px rgba(7, 69, 130, 0.8);
+	background-color: var(--color-secondary-darker);
+	border-color: var(--color-secondary-darkest);
+	box-shadow: 0 0 20px rgba(7, 69, 130, 0.8);
 }
 
 .game__button--zap:disabled {
-  cursor: not-allowed;
-  transform: none;
-  opacity: 0.5;
+	cursor: not-allowed;
+	transform: none;
+	opacity: 0.5;
 }

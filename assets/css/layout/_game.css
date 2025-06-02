@@ -1,58 +1,58 @@
 .game {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../../img/environment/garage.png');
-  background-size: cover;
-  background-position: left center;
-  height: 100vh;
-  width: 100vw;
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../../img/environment/garage.png');
+	background-size: cover;
+	background-position: left center;
+	height: 100vh;
+	width: 100vw;
 }
 
 .game__container {
-  position: relative;
-  width: inherit;
-  height: calc(100vh - var(--header-footer-height));
-  overflow: hidden;
+	position: relative;
+	width: inherit;
+	height: calc(100vh - var(--header-footer-height));
+	overflow: hidden;
 }
 
 .game__status {
-  background-image: linear-gradient(var(--color-overlay));
+	background-image: linear-gradient(var(--color-overlay));
 	backdrop-filter: blur(6px);
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  opacity: 0;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-  z-index: var(--z-index-status);
-  transition: opacity 0.5s;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	opacity: 0;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 36px;
+	z-index: var(--z-index-status);
+	transition: opacity 0.5s;
 }
 
 .game__status-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	text-align: center;
 }
 
-.game__status-content > img {
-    width: 180px;
+.game__status-content>img {
+	width: 180px;
 }
 
 .game__status-message {
-  font-size: 0.8rem;
+	font-size: 0.8rem;
 }
 
 .game__status-winner-message {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .game__status-message,
 .game__status-winner-message {
-  font-weight: var(--font-weight-bold);
-  color: var(--color-white);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-white);
 }
